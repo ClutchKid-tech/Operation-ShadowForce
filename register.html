@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Register – Operation Shadow Force</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="logo">Operation - Shadow Force</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="curriculum.html">Curriculum</a>
+      <a href="register.html" class="active">Register</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main class="page-content">
+    <div class="coming-soon-banner">
+      🚧 <strong>Course Coming Soon!</strong> Register your interest below and be the first to know when enrollment opens.
+    </div>
+    <h1>Register Your Interest</h1>
+    <p>
+      Our Operation Shadow Force spy course isn’t open yet, but you can sign up now and we’ll notify you as soon as we launch!
+    </p>
+    <form name="interest" method="POST" data-netlify="true" class="registration-form">
+      <input type="hidden" name="form-name" value="interest" />
+      <div class="form-group">
+        <label for="parent-name">Parent/Guardian Name</label>
+        <input type="text" id="parent-name" name="parentName" required class="form-control" />
+      </div>
+      <div class="form-group">
+        <label for="parent-email">Email Address</label>
+        <input type="email" id="parent-email" name="parentEmail" required class="form-control" />
+      </div>
+      <div class="form-group">
+        <label for="parent-phone">Phone Number</label>
+        <input type="tel" id="parent-phone" name="parentPhone" required class="form-control" />
+      </div>
+      <div class="form-group">
+        <label for="child-name">Child’s Name</label>
+        <input type="text" id="child-name" name="childName" required class="form-control" />
+      </div>
+      <div class="form-group">
+        <label for="child-age">Child’s Age</label>
+        <input type="number" id="child-age" name="childAge" min="9" max="16" required class="form-control" />
+      </div>
+      <!-- You can remove these program and start date fields if you want a simpler form, but left here for now -->
+      <div class="form-group">
+        <label for="program">Program</label>
+        <select id="program" name="program" required class="form-control">
+          <option value="">Select a program…</option>
+          <option value="shadow-force">Operation – Shadow Force</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="start-date">Preferred Start Date</label>
+        <input type="date" id="start-date" name="startDate" class="form-control" />
+      </div>
+      <div class="form-group">
+        <label for="emergency-name">Emergency Contact Name</label>
+        <input type="text" id="emergency-name" name="emergencyName" required class="form-control" />
+      </div>
+      <div class="form-group">
+        <label for="emergency-phone">Emergency Contact Phone</label>
+        <input type="tel" id="emergency-phone" name="emergencyPhone" required class="form-control" />
+      </div>
+      <div class="form-group">
+        <label for="notes">Additional Notes</label>
+        <textarea id="notes" name="notes" rows="4" class="form-control"></textarea>
+      </div>
+      <button type="submit" class="btn-submit">Submit Registration</button>
+    </form>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2025 Operation – Shadow Force</p>
+    <ul class="social">
+      <li><a href="#">Instagram</a></li>
+      <li><a href="#">Facebook</a></li>
+    </ul>
+  </footer>
+</body>
+</html>
